@@ -1,10 +1,8 @@
 import sys
 
-#Day 3
-#1. Excel Column Number
+# Excel Column Number
 # INPUT:-
 # Column name
-# 3
 # A
 # AB
 # ZY
@@ -13,24 +11,21 @@ import sys
 # 28
 # 701
 
-#input output files
-sys.stdout = open('d:/Coding/30daysSDE/output.txt','w')
-sys.stdin = open('d:/Coding/30daysSDE/input.txt','r')
 
-for t in range(int(input())):
-    # solution
-    # reverse the string and add the order of letter in the answer multiplied by 26^index
-    s=input()
+s=input()
+# solution
+# reverse the string and add the order of letter in the answer multiplied by 26^index
+def excel_col(s):
     ans=0
     n=len(s)
     s=s[::-1]
     for i in range(n):
         ans+=(ord(s[i])-65 + 1)*(26**i)
-    print(ans)
+    return(ans)
         
-for t in range(int(input())):
-    # from column no to column name
-    n=int(input())
+# from column no to column name
+n=int(input())
+def excel_col(n):
     s=''
     while n>0:
         rem=n%26

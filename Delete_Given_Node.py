@@ -1,7 +1,6 @@
 import sys
 
-#Day 5
-# 5. Delete a given Node when a node is given. (O(1) solution)
+# Delete a given Node when a node is given. (O(1) solution
 # INPUT:-
 # node to be deleted
 # linked list:=>> 1->2->3->4->5->NULL

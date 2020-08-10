@@ -1,7 +1,6 @@
 import sys
 
-#Day 6
-# 4. detect a cycle & remove loop in linked list
+# detect a cycle & remove loop in linked lis
 # INPUT:-
 # linked list
 # 1->2->3->2->1->NULL

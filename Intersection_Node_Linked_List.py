@@ -1,7 +1,6 @@
 import sys
 
-#Day 6
-# 1. Find intersection point of linked list
+# Find intersection point of linked list
 # INPUT:-
 # 2 linked list
 # 1->2->3->->NULL

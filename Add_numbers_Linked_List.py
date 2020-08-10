@@ -1,7 +1,6 @@
 import sys
 
-#Day 5
-# 6. Add two numbers as LinkedList
+# Add two numbers as LinkedLis
 # INPUT:-
 # 2 linked list
 # 1->2->3->->NULL

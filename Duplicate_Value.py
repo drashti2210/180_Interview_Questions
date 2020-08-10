@@ -1,8 +1,7 @@
 import sys
 import collections
 
-#Day-1 
-# 1. Find the duplicate in an array of N+1 integers. 
+# Find the duplicate in an array of N+1 integers. 
 # Example
 # INPUT:-
 # 1st line no. of test cases-t
@@ -16,10 +15,6 @@ import collections
 # 5
 # 1
 # 5
-
-#input output files
-sys.stdout = open('d:/Coding/30daysSDE/output.txt','w')
-sys.stdin = open('d:/Coding/30daysSDE/input.txt','r')
 
 for t in range(int(input())):
     lst=list(map(int,input().split()))

@@ -1,6 +1,5 @@
 import sys
 
-#Day 6
 # 6. Rotate Linked List by k
 # INPUT:-
 # linked list
