@@ -11,7 +11,7 @@ height=list(map(int,input().split()))
 
 # solution 1
 # By traversing array till ith index
-def maxWater(height): 
+def trap(height): 
     n=len(height)
     res = 0
     for i in range(1, n - 1) :  
@@ -22,7 +22,7 @@ def maxWater(height):
         for j in range(i + 1 , n) :  
             right = max(right, arr[j])
         res = res + (min(left, right) - arr[i])
-    return res;  
+    return res
 
 # solution 2
 # using 2 poiters
