@@ -11,8 +11,8 @@ import sys
 # Print next permutation
 # 1 3 2
 
-sys.stdout = open('d:/Coding/30daysSDE/output.txt','w')
-sys.stdin = open('d:/Coding/30daysSDE/input.txt','r')
+sys.stdout = open('d:/Coding/output.txt','w')
+sys.stdin = open('d:/Coding/input.txt','r')
 for t in range(int(input())):
     # solution by looping
     # inplace solution

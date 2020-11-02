@@ -1,5 +1,6 @@
 import sys
-
+sys.stdout = open('d:/Coding/output.txt','w')
+sys.stdin = open('d:/Coding/input.txt','r')
 # Trapping Rain Water
 # INPUT:-
 # Array of height of building
@@ -7,27 +8,13 @@ import sys
 # OUTPUT:-
 # 6
 
-height=list(map(int,input().split()))
 
 # solution 1
-# By traversing array till ith index
-def trap(height): 
-    n=len(height)
-    res = 0
-    for i in range(1, n - 1) :  
-        left = arr[i];  
-        for j in range(i) : 
-            left = max(left, arr[j])
-        right = arr[i];  
-        for j in range(i + 1 , n) :  
-            right = max(right, arr[j])
-        res = res + (min(left, right) - arr[i])
-    return res
-
-# solution 2
 # using 2 poiters
 # Time Complexity O(n)
-def trap(height):
+
+for t in range(int(input())):
+        height=list(map(int,input().split()))
         result = 0
         i = 0
         j = len(height) - 1
@@ -42,4 +29,7 @@ def trap(height):
                 result += rmax - height[j]
                 j-=1
                 
-        return result
+        print(result)
+
+for t in range(int(input())):
+        height=list(map(int,input().split()))

@@ -13,7 +13,7 @@ class ListNode:
         self.val = x
         self.next = None
 
-def reverseList(head):
+def reverseList(self,head):
     # recursive approach
     if head is None or head.next is None:
         return head

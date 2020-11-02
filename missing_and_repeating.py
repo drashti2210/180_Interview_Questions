@@ -19,8 +19,8 @@ import sys
 # 2 3
 # 5 1
 
-sys.stdout = open('d:/Coding/30daysSDE/output.txt','w')
-sys.stdin = open('d:/Coding/30daysSDE/input.txt','r')
+sys.stdout = open('d:/Coding/output.txt','w')
+sys.stdin = open('d:/Coding/input.txt','r')
 
 for t in range(int(input())):
     #solution 1 - By sorting
@@ -44,7 +44,8 @@ for t in range(int(input())):
     #Time Complexity O(n) Space Complexity O(1)
     miss=repeat=0
     for i in range(n): 
-        if arr[abs(arr[i])-1] > 0: 
+        if arr[abs(arr[i])-1] > 0:
+
             arr[abs(arr[i])-1] = -arr[abs(arr[i])-1] 
         else: 
             repeat=abs(arr[i]) 
@@ -52,6 +53,7 @@ for t in range(int(input())):
     for i in range(n): 
         if arr[i]>0: 
             miss=i + 1 
+    
     print(miss,repeat)
 
     # solution 3 Using Hashing
